@@ -4,19 +4,26 @@
 
 <%= form_for(Pet.new) do |f| %>
   <p>
+    <%= radio_button_tag(:type, "cat") %>
+    <%= f.label "cat" %>
+    <%= radio_button_tag(:type, "dog") %>
+    <%= f.label "dog" %>
+  </p>
+  <p>
     <%= f.label "Pet Name"  %>
     <%= f.text_field :name %>
   </p>
   <p>
     <%= f.label "Description" %>
-    <%= f.text_field :description %>
+    <%= f.text_area :description, size: "15x5" %>
   </p>
   <p>
     <%= f.label "Zipcode" %>
     <%= f.text_field :zip %>
   </p>
+  <p>
+    <%= f.submit "Submit info" %>
+  </p>
 <% end %>
-
-  <button id="submit"> Submit info </button>
 
 </html>

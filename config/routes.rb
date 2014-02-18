@@ -3,6 +3,8 @@ Final::Application.routes.draw do
   resources :pets
   root 'pets#index'
 
+  get "found_pets", to: "found_pets#index", as: "found_pets"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
