@@ -2,15 +2,19 @@ require 'test_helper'
 
 class UserTest < Capybara::Rails::TestCase
 
-  test "user can see index page" do
+  def test_user_can_visit_index
     visit root_path
-    assert_content page, "hello"
+    assert_content page, "Welcome"
   end
 
-  # def test_user_can_log_in
-    # skip
-  #   get "/login"
-  #   assert_equal 200, response
-  # end
+  def test_user_can_fill_out_form
+    visit root_path
+
+    fill_in("pet_name", with: "Beatrix")
+    fill_in "pet_description", with: "Long haired calico cat last seen lurking around building 19"
+    fill_in "pet_zip", with: 80027
+
+    click_on "Submit info"
+  end
 
 end

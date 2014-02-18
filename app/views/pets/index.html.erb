@@ -1,1 +1,22 @@
-"hello"
+<html>
+
+"Welcome"
+
+<%= form_for(Pet.new) do |f| %>
+  <p>
+    <%= f.label "Pet Name"  %>
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label "Description" %>
+    <%= f.text_field :description %>
+  </p>
+  <p>
+    <%= f.label "Zipcode" %>
+    <%= f.text_field :zip %>
+  </p>
+<% end %>
+
+  <button id="submit"> Submit info </button>
+
+</html>
