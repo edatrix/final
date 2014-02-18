@@ -8,13 +8,18 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
+gem 'minitest-rails'
 
 group :doc do
   gem 'sdoc', require: false
 end
 
-group :development, :test do
-  gem 'rspec-rails'
-  gem 'capybara'
-  gem 'launchy'
+# group :development, :test do
+#   gem 'capybara-rails'
+#   gem 'launchy'
+# end
+
+group :test do
+  gem 'minitest-rails-capybara'
 end
+
