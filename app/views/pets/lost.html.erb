@@ -6,7 +6,7 @@
     <% @pets.each do |pet| %>
     <li>
       <% if pet.avatar.exists? %>
-      <%= image_tag pet.avatar.url(:small), {:class => "pet-show-image"} %>
+      <%= image_tag pet.avatar.url(:medium), {:class => "pet-show-image"} %>
       <% end %>
       <li><p> <%= pet.name %></p></li>
       <p> <%= pet.description %></p>
