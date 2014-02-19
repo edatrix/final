@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Final</title>
+  <title>Find Bebe</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <header class="navbar navbar-fixed-top">
+    <h1>Find Bebe</h1>
+  </header>
 
   <%= yield %>
 
   <% flash.each do |name, msg| -%>
     <%= content_tag :div, msg, class: name %>
   <% end -%>
+
+  <!-- <footer>
+    <div>
+      <p>made by lauren</p>
+    </div>
+  </footer> -->
 
 </body>
 </html>
