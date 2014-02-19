@@ -4,10 +4,7 @@
 
 <%= form_for(Pet.new) do |f| %>
   <p>
-    <%= radio_button_tag(:type, "cat") %>
-    <%= f.label "cat" %>
-    <%= radio_button_tag(:type, "dog") %>
-    <%= f.label "dog" %>
+    <%= select(:pet, :species, Pet.species_for_select) %>
   </p>
   <p>
     <%= f.label "Pet Name"  %>
