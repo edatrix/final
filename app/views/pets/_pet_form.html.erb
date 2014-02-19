@@ -1,0 +1,24 @@
+<%= form_for(Pet.new, :html => { :multipart => true }) do |f| %>
+  <p>
+    <%= select("pet", "species_cd", Pet.species_for_select(:value)) %>
+    <%= select("pet", "status_cd", Pet.statuses_for_select(:value)) %>
+  </p>
+  <p>
+    <%= f.label "Pet Name"  %>
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label "Description" %>
+    <%= f.text_area :description, size: "15x5" %>
+  </p>
+  <p>
+    <%= f.label "Zipcode" %>
+    <%= f.text_field :zip %>
+  </p>
+  <p>
+    <%= f.file_field :avatar %>
+  </p>
+  <p>
+    <%= f.submit "Submit info" %>
+  </p>
+<% end %>
