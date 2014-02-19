@@ -11,6 +11,7 @@
       <li><p> <%= pet.name %></p></li>
       <p> <%= pet.description %></p>
       <p> <%= pet.zip %></p>
+      <p> <%= button_to "I found my pet!", pet, method: :delete, data: { confirm: "Are you sure?" } %></p>
     </li>
     <% end %>
   </ul>

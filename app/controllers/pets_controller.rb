@@ -22,6 +22,12 @@ class PetsController < ApplicationController
     @pets = Pet.where(status_cd: 1)
   end
 
+  def destroy
+    pet = Pet.find_by(params[:id])
+    pet.destroy
+    redirect_to root_path
+  end
+
   private
 
   def pet_params

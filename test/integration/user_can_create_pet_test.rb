@@ -7,7 +7,7 @@ class UserTest < Capybara::Rails::TestCase
     assert_content page, "Welcome"
   end
 
-  def test_user_can_fill_out_form
+  def test_user_can_create_lost
     visit root_path
 
     select "Cat", :from => "pet_species_cd"
@@ -17,6 +17,22 @@ class UserTest < Capybara::Rails::TestCase
     fill_in "pet_zip", with: 80027
 
     click_on "Submit info"
+
+    assert_content page, "Does this belong to you?"
+  end
+
+    def test_user_can_create_found
+    visit root_path
+
+    select "Dog", :from => "pet_species_cd"
+    select "Found", :from => "pet_status_cd"
+    fill_in "pet_name", with: "Sparkles"
+    fill_in "pet_description", with: "Little yapper dog."
+    fill_in "pet_zip", with: 80027
+
+    click_on "Submit info"
+
+    assert_content page, "Does this belong to you?"
   end
 
 end
