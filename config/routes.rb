@@ -2,6 +2,7 @@ Final::Application.routes.draw do
 
   resources :pets do
     get :found, on: :collection
+    get :lost, on: :collection
   end
 
   root 'pets#index'

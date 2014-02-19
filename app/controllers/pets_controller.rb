@@ -18,6 +18,9 @@ class PetsController < ApplicationController
     # @pets = Pet.where(status: "found")
   end
 
+  def lost
+  end
+
   private
 
   def pet_params
