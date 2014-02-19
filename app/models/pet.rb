@@ -1,5 +1,6 @@
 class Pet < ActiveRecord::Base
   as_enum :species, :cat => 0, :dog => 1, :other => 2
+  as_enum :status, :lost => 0, :found => 1
 
   validates :name, :description, :zip, :species_cd, presence: true
   validates :zip, numericality: { only_integer: true}

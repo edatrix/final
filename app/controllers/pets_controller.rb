@@ -15,6 +15,7 @@ class PetsController < ApplicationController
   end
 
   def found
+    # @pets = Pet.where(status: "found")
   end
 
   private
