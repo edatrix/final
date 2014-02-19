@@ -11,6 +11,7 @@ gem 'jbuilder', '~> 1.2'
 gem 'minitest-rails'
 gem 'simple_enum'
 gem 'paperclip'
+gem 'pry'
 
 group :doc do
   gem 'sdoc', require: false

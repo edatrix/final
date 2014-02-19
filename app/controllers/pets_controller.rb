@@ -6,8 +6,12 @@ class PetsController < ApplicationController
 
   def create
     pet = Pet.new(pet_params)
-    pet.save
-    redirect_to found_pets_path
+    if pet.save
+      redirect_to found_pets_path
+    else
+      flash[:error] = "Please fill out all fields."
+      redirect_to(:back)
+    end
   end
 
   def found
@@ -20,3 +24,4 @@ class PetsController < ApplicationController
   end
 
 end
+
