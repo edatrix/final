@@ -1,7 +1,21 @@
 <html>
 
 "Welcome"
-
-<%= render partial: 'pet_form' %>
-
+<body>
+  <div class="page-container">
+    <div class="pet-trio">
+    <% @pets.each do |pet| %>
+     <% if pet.avatar.exists? %>
+      <%= image_tag pet.avatar.url(:small), {:class => "pet-show-image"} %>
+      <% end %>
+    <% end %>
+    </div>
+    <div class="form-container">
+      <div class="pet-form">
+        <h3 class="form-header"> Enter information about your lost or found pet here </h3>
+        <%= render partial: 'pet_form' %>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
