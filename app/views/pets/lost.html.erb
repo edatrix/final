@@ -1,1 +1,22 @@
+<html>
 "Have you seen me?"
+
+<div id="lost">
+  <ul>
+    <% @pets.each do |pet| %>
+    <li>
+      <% if pet.avatar.exists? %>
+      <%= image_tag pet.avatar.url(:small), {:class => "pet-show-image"} %>
+      <% end %>
+      <li><p> <%= pet.name %></p></li>
+      <p> <%= pet.description %></p>
+      <p> <%= pet.zip %></p>
+    </li>
+    <% end %>
+  </ul>
+</div>
+
+
+
+
+</html>

@@ -14,17 +14,18 @@ class PetsController < ApplicationController
     end
   end
 
-  def found
-    # @pets = Pet.where(status: "found")
+  def lost
+    @pets = Pet.where(status_cd: 0)
   end
 
-  def lost
+  def found
+    @pets = Pet.where(status_cd: 1)
   end
 
   private
 
   def pet_params
-    params.require(:pet).permit(:name, :description, :zip, :species_cd, :avatar)
+    params.require(:pet).permit(:name, :description, :zip, :species_cd, :status_cd, :avatar)
   end
 
 end
