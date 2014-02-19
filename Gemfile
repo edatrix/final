@@ -10,6 +10,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'minitest-rails'
 gem 'simple_enum'
+gem 'paperclip'
 
 group :doc do
   gem 'sdoc', require: false
