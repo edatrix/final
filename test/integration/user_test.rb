@@ -18,7 +18,7 @@ class UserTest < Capybara::Rails::TestCase
     click_on "Submit info"
   end
 
-  def test_user_can
-  end
+  # def test_user_can
+  # end
 
 end

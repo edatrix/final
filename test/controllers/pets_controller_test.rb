@@ -1,7 +1,11 @@
 require 'test_helper'
 
 class PetsControllerTest < ActionController::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+
+  def test_it_shows_found_pets
+    get :found
+
+    assert_response :success
+  end
+
 end
