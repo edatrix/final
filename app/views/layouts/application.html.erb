@@ -13,11 +13,13 @@
 
   <div id="account">
     <% if current_user %>
-      <span>Welcome, <%= current_user.name %></span>
-      <%= link_to "logout", logout_path, id: "logout" %>
+      <span> Welcome, <%= current_user.name %></span>
+      <%= link_to "Sign Out", logout_path, id: "logout" %>
     <% else %>
-      <%= link_to "login", login_path, id: "login" %>
-    <% end %>
+      <%= link_to "Sign in with Twitter", twitter_login_path, id: "twitter_login"%>
+      <%= link_to "Sign in with Facebook", facebook_login_path, id: "facebook_login" %>
+  <% end %>
+  
   </div>
 
   <%= yield %>

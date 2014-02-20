@@ -13,6 +13,7 @@ gem 'simple_enum'
 gem 'paperclip'
 gem 'pry'
 gem 'omniauth-twitter'
+gem 'omniauth-facebook'
 
 group :doc do
   gem 'sdoc', require: false
