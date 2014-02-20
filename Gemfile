@@ -12,6 +12,7 @@ gem 'minitest-rails'
 gem 'simple_enum'
 gem 'paperclip'
 gem 'pry'
+gem 'omniauth-twitter'
 
 group :doc do
   gem 'sdoc', require: false

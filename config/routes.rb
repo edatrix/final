@@ -7,6 +7,9 @@ Final::Application.routes.draw do
 
   root 'pets#index'
 
+  get '/auth/:provider/callback', to: 'sessions#create'
+  get '/login' => redirect('/auth/twitter'), as: :login
+  get '/logout' => 'sessions#destroy', as: :logout
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
