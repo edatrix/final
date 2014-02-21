@@ -16,15 +16,15 @@ class PetsController < ApplicationController
   end
 
   def lost
-    @pets = Pet.where(status_cd: 0)
+    @pets = Pet.lost
   end
 
   def found
-    @pets = Pet.where(status_cd: 1)
+    @pets = Pet.found
   end
 
   def destroy
-    pet = Pet.find_by(params[:id])
+    pet = Pet.find_by(id: params[:id])
     pet.destroy
     flash[:notice] = "We are happy you found your pet!"
     redirect_to root_path
