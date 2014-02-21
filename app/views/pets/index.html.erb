@@ -7,9 +7,7 @@
     <p> <%= button_to "View all found pets", found_pets_path, method: :get, id: "found_pets" %></p>
     <div class="pet-trio">
     <% @pets.each do |pet| %>
-     <% if pet.avatar.exists? %>
       <%= image_tag pet.avatar.url(:medium), {:class => "pet-show-image"} %>
-      <% end %>
     <% end %>
     </div>
     <div class="form-container">

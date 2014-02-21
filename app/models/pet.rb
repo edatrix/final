@@ -8,4 +8,12 @@ class Pet < ActiveRecord::Base
   has_attached_file :avatar, :styles => { :medium => "300x300>", :thumb => "100x100>" }, :default_url => "/images/:style/missing.png"
   validates_attachment_content_type :avatar, :content_type => /\Aimage\/.*\Z/
 
+  def self.most_recent
+    Pet.order("created_at DESC").limit(3)
+  end
+
+  def self.recent_with_image
+    Pet.order("created_at DESC").where("avatar_file_name is not null").limit(3)
+  end
+
 end

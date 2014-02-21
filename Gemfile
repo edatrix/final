@@ -19,10 +19,11 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-# group :development, :test do
-#   gem 'capybara-rails'
-#   gem 'launchy'
-# end
+group :development do
+  gem 'quiet_assets'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+end
 
 group :test do
   gem 'minitest-rails-capybara'

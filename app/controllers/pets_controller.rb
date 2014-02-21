@@ -1,7 +1,7 @@
 class PetsController < ApplicationController
 
   def index
-    @pets = Pet.all
+    @pets = Pet.recent_with_image
   end
 
   def create
