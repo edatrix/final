@@ -14,6 +14,7 @@ gem 'paperclip'
 gem 'pry'
 gem 'omniauth-twitter'
 gem 'omniauth-facebook'
+gem 'petfinder'
 
 group :doc do
   gem 'sdoc', require: false

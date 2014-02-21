@@ -54,6 +54,7 @@ GEM
     coffee-script-source (1.7.0)
     debug_inspector (0.0.2)
     erubis (2.7.0)
+    excon (0.31.0)
     execjs (2.0.2)
     faraday (0.9.0)
       multipart-post (>= 1.2, < 3)
@@ -125,6 +126,9 @@ GEM
       activesupport (>= 3.0.0)
       cocaine (~> 0.5.3)
       mime-types
+    petfinder (1.0.1)
+      excon (~> 0.26)
+      nokogiri (~> 1.6)
     polyglot (0.3.3)
     pry (0.9.12.6)
       coderay (~> 1.0)
@@ -203,6 +207,7 @@ DEPENDENCIES
   omniauth-facebook
   omniauth-twitter
   paperclip
+  petfinder
   pry
   quiet_assets
   rails (= 4.0.2)
