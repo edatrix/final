@@ -1,4 +1,6 @@
-== README
+== Find Bebe
+
+Find Bebe is a petfinder app built by lauren spath luhring using minitest and Rails.
 
 This README would normally document whatever steps are necessary to get the
 application up and running.

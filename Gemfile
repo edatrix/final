@@ -15,6 +15,7 @@ gem 'pry'
 gem 'omniauth-twitter'
 gem 'omniauth-facebook'
 gem 'petfinder'
+gem 'json'
 
 group :doc do
   gem 'sdoc', require: false
