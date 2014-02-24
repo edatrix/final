@@ -1,18 +1,20 @@
 <html>
-"Does this belong to you?"
+<div class="page-container">
+<h2>Does this belong to you?</h2>
 
 <div id="found">
   <ul>
     <% @pets.each do |pet| %>
-    <li>
+    <div class="found-pet">
       <% if pet.avatar.exists? %>
       <%= image_tag pet.avatar.url(:medium), {:class => "pet-show-image"} %>
       <% end %>
-      <li><p> <%= pet.name %></p></li>
+      <p> <%= pet.name %></p>
       <p> <%= pet.description %></p>
       <p> <%= pet.zip %></p>
-    </li>
+    </div>
     <% end %>
   </ul>
+</div>
 </div>
 </html>
