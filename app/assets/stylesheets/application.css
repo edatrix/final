@@ -18,6 +18,17 @@
   margin: 15px;
  }*/
 
+body {
+  font-family: 'McLaren', serif;
+  font-size: 18px;
+}
+
+.page-container {
+  margin:20px;
+  padding:20px;
+}
+
  #account {
   float: right;
  }
+
