@@ -3,21 +3,18 @@
 
 <div id="lost">
   <ul>
-    <% @pets.each do |pet| %>
-    <li>
-      <% if pet.avatar.exists? %>
-      <%= image_tag pet.avatar.url(:medium), {:class => "pet-show-image"} %>
+    <% @pets.each do |pet| %> 
+      <div class="lost-pet">
+        <% if pet.avatar.exists? %>
+        <%= image_tag pet.avatar.url(:medium), {:class => "pet-show-image"} %>
+        <% end %>
+        <p> <%= pet.name %></p>
+        <p> <%= pet.description %></p>
+        <p> <%= pet.zip %></p>
+        <p> <%= button_to "I found my pet!", pet, method: :delete, data: { confirm: "Are you sure?" } %></p>
+      </div>
       <% end %>
-      <li><p> <%= pet.name %></p></li>
-      <p> <%= pet.description %></p>
-      <p> <%= pet.zip %></p>
-      <p> <%= button_to "I found my pet!", pet, method: :delete, data: { confirm: "Are you sure?" } %></p>
-    </li>
-    <% end %>
   </ul>
 </div>
-
-
-
 
 </html>

@@ -12,3 +12,12 @@
  *= require_tree .
  */
 
+/*
+ .navbar navbar-fixed-top {
+  width: auto;
+  margin: 15px;
+ }*/
+
+ #account {
+  float: right;
+ }

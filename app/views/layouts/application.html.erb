@@ -16,10 +16,9 @@
       <span> Welcome, <%= current_user.name %></span>
       <%= link_to "Sign Out", logout_path, id: "logout" %>
     <% else %>
-      <%= link_to "Sign in with Twitter", twitter_login_path, id: "twitter_login"%>
-      <%= link_to "Sign in with Facebook", facebook_login_path, id: "facebook_login" %>
-  <% end %>
-  
+      <%= button_to "Sign in with Twitter", twitter_login_path, method: :get, id: "twitter_login"%>
+      <%= button_to "Sign in with Facebook", facebook_login_path, method: :get, id: "facebook_login" %>
+    <% end %>
   </div>
 
   <%= yield %>
