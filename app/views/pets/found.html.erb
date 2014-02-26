@@ -12,7 +12,7 @@
         <%= image_tag pet.avatar_file_name, {:class => "pet-show-image"} %>
       <% end %>
       <p> <%= pet.name %></p>
-      <p> <%= pet.description[0..250] %></p>
+      <p> <%= pet.description[0..250] %>...</p><a href="found_pets_path">read more</a>
       <p> <%= pet.shelter_name %></p>
       <p> <%= pet.zip %></p>
     </div>
