@@ -11,7 +11,8 @@
   </head>
 <body>
   <header class="navbar navbar-fixed-top">
-    <h1>Find Bebe</h1>
+    <!-- <h1>Find Bebe</h1> -->
+    <h1><a href='/'>Find Bebe</a></h1>
     <p> <%= link_to "Home", root_path, id: "root_path" %></p>
   </header>
 
@@ -29,12 +30,12 @@
 
   <% flash.each do |name, msg| -%>
     <%= content_tag :div, msg, class: name %>
-  <% end -%>
+  <% end %>
 </body>
- <footer>
+ <!-- <footer>
     <div>
       <p>made by lauren</p>
     </div>
-  </footer>
+  </footer> -->
 </div>
 </html>

@@ -30,6 +30,9 @@ body {
 .page-container {
   margin:20px;
   padding:20px;
+  /*background: image-url('Sandy.jpg') no-repeat center center;
+  min-height: 100%;
+  background-size:cover;*/
 }
 
  #account {
