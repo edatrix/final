@@ -7,10 +7,13 @@
     <% @pets.each do |pet| %>
     <div class="found-pet">
       <% if pet.avatar.exists? %>
-      <%= image_tag pet.avatar.url(:medium), {:class => "pet-show-image"} %>
+        <%= image_tag pet.avatar.url(:medium), {:class => "pet-show-image"} %>
+      <% elsif pet.avatar_file_name %>
+        <%= image_tag pet.avatar_file_name, {:class => "pet-show-image"} %>
       <% end %>
       <p> <%= pet.name %></p>
-      <p> <%= pet.description %></p>
+      <p> <%= pet.description[0..250] %></p>
+      <p> <%= pet.shelter_name %></p>
       <p> <%= pet.zip %></p>
     </div>
     <% end %>
