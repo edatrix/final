@@ -7,4 +7,6 @@ class Find
     # @shelter = Shelter.new(find["shelter"])
   end
 
+
+
 end

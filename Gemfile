@@ -16,6 +16,7 @@ gem 'omniauth-twitter'
 gem 'omniauth-facebook'
 gem 'petfinder'
 gem 'json'
+gem 'figaro'
 
 group :doc do
   gem 'sdoc', require: false
