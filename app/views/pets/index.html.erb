@@ -1,23 +1,23 @@
-<html>
-<div class="page-container">
+<h2>Welcome!</h2>
+  
+  <div class="buttons">
+    <span> 
+      <%= link_to "View all lost pets", lost_pets_path, method: :get, id: "lost_pets" %>
+      <%= link_to "View all found pets", found_pets_path, method: :get, id: "found_pets" %>
+    </span>
+  </div>
 
-<h2>Welcome</h2>
-<body>
-  <div class="page-container">
-    <p> <%= button_to "View all lost pets", lost_pets_path, method: :get, id: "lost_pets" %></p>
-    <p> <%= button_to "View all found pets", found_pets_path, method: :get, id: "found_pets" %></p>
     <div class="pet-trio">
     <% @pets.each do |pet| %>
       <%= image_tag pet.avatar.url(:medium), {:class => "pet-show-image"} %>
     <% end %>
     </div>
+    
     <div class="form-container">
       <div class="pet-form">
         <h3 class="form-header"> Enter information about your lost or found pet here </h3>
         <%= render partial: 'pet_form' %>
       </div>
     </div>
-  </div>
-</body>
-</div>
-</html>
+  
+

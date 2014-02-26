@@ -12,11 +12,12 @@
  *= require_tree .
  */
 
-/*
- .navbar navbar-fixed-top {
+
+ .navbar-fixed-top {
   width: auto;
-  margin: 15px;
- }*/
+  margin: 20px;
+  padding: 10px;
+ }
 
 footer {
   text-align: center
@@ -27,8 +28,8 @@ body {
 }
 
 .page-container {
-  margin:20px;
-  padding:20px;
+  margin:3%;
+  padding:3%;
   /*background: image-url('Sandy.jpg') no-repeat center center;
   min-height: 100%;
   background-size:cover;*/

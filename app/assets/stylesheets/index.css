@@ -1,5 +1,13 @@
 .pet-trio {
-  width: center;
+  text-align: center;
   margin-left: 100px;
   margin-right: 100px;
+}
+
+.buttons {
+  text-align: center;
+}
+
+.pet-form {
+
 }

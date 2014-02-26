@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<div class="page-container">
+
   <head>
     <link href='http://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
 
@@ -10,12 +10,14 @@
     <%= csrf_meta_tags %>
   </head>
 <body>
-  <header class="navbar navbar-fixed-top">
+
+  <header class="navbar-fixed-top">
     <div class="logo">
-      <%= link_to image_tag("logo.png"), "/" %>
-      </div>
+      <%= link_to image_tag("logo.png", size: "155x110"), "/" %>
+    </div>
   </header>
 
+<div class="page-container">
   <div id="account">
     <% if current_user %>
       <span> Welcome, <%= current_user.name %></span>

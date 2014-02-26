@@ -1,21 +1,17 @@
-<html>
-<div class="page-container">
 <h2>Have you seen me?</h2>
 
 <div id="lost">
-  <ul>
+  <ul class="lost-pet-list">
     <% @pets.each do |pet| %> 
-      <div class="lost-pet">
+      <li class="lost-pet">
         <% if pet.avatar.exists? %>
-        <%= image_tag pet.avatar.url(:medium), {:class => "pet-show-image"} %>
+        <%= image_tag pet.avatar.url(:medium), {:class => "lost-pet-show-image"} %>
         <% end %>
         <p> <%= pet.name %></p>
         <p> <%= pet.description %></p>
         <p> <%= pet.zip %></p>
         <p> <%= button_to "I found my pet!", pet, method: :delete, data: { confirm: "Are you sure?" } %></p>
-      </div>
+      </li>
       <% end %>
   </ul>
 </div>
-</div>
-</html>

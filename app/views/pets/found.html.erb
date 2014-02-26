@@ -1,23 +1,20 @@
-<html>
-<div class="page-container">
 <h2>Does this belong to you?</h2>
 
 <div id="found">
-  <ul>
+  <ul class="found-pet-list">
     <% @pets.each do |pet| %>
-    <div class="found-pet">
+    <li class="found-pet">
       <% if pet.avatar.exists? %>
-        <%= image_tag pet.avatar.url(:medium), {:class => "pet-show-image"} %>
+        <%= image_tag pet.avatar.url(:medium), {:class => "found-pet-show-image"} %>
       <% elsif pet.avatar_file_name %>
-        <%= image_tag pet.avatar_file_name, {:class => "pet-show-image"} %>
+        <%= image_tag pet.avatar_file_name, {:class => "found-pet-show-image"} %>
       <% end %>
       <p> <%= pet.name %></p>
       <p> <%= pet.description[0..250] %>...</p><a href="found_pets_path">read more</a>
       <p> <%= pet.shelter_name %></p>
       <p> <%= pet.zip %></p>
-    </div>
+    </li>
     <% end %>
   </ul>
 </div>
-</div>
-</html>
+
