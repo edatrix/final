@@ -15,10 +15,8 @@
     <div class="logo">
       <%= link_to image_tag("logo.png", size: "155x110"), "/" %>
     </div>
-  </header>
 
-<div class="page-container">
-  <div id="account">
+    <div id="account">
     <% if current_user %>
       <span> Welcome to Find Bebe!</span>
       <%= link_to "Sign Out", logout_path, id: "logout" %>
@@ -26,15 +24,18 @@
       <%= button_to "Sign in with Twitter", twitter_login_path, method: :get, id: "twitter_login"%>
       <%= button_to "Sign in with Facebook", facebook_login_path, method: :get, id: "facebook_login" %>
     <% end %>
-  </div>
+    </div>
+  </header>
+
+<div class="page-container">
 
   <%= yield %>
 
   <% flash.each do |name, msg| -%>
     <%= content_tag :div, msg, class: name %>
   <% end %>
-</body>
 </div>
+</body>
 
 <footer>
   <div>
