@@ -15,6 +15,10 @@ class PetsController < ApplicationController
     end
   end
 
+  def show
+    @pet = Pet.find(params[:id])
+  end
+
   def fetch_found_pets
     ["dog", "cat"].each do |type|
       PetFetcher.found_pets(type, "80204")

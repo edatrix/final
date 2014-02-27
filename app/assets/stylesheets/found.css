@@ -15,6 +15,10 @@ ul.found-pet-list {
   margin: 0 auto;
 }
 
+p.found-name {
+  font-size: 20px;
+}
+
 .found-pet-show-image {
   display: block;
   margin:10px auto;

@@ -1,0 +1,14 @@
+<h2><%= @pet.name %></h2>
+
+<ul class="show-pet-list">
+  <li class="show-pet">
+    <% if @pet.avatar.exists? %>
+      <%= image_tag @pet.avatar.url(:medium), {:class => "show-pet-show-image"} %>
+    <% elsif @pet.avatar_file_name %>
+      <%= image_tag @pet.avatar_file_name, {:class => "show-pet-show-image"} %>
+    <% end %>
+    <p> <%= @pet.description %></p>
+    <p class="shelter-name"> If I belong to you, please contact <%= @pet.shelter_name %> </p>
+    <p> <%= @pet.zip %></p>
+  </li>
+</ul>
