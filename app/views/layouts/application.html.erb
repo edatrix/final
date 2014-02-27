@@ -24,6 +24,11 @@
       <%= button_to "Sign in with Twitter", twitter_login_path, method: :get, id: "twitter_login"%>
       <%= button_to "Sign in with Facebook", facebook_login_path, method: :get, id: "facebook_login" %>
     <% end %>
+      <div id="flash">
+        <% flash.each do |name, msg| -%>
+          <%= content_tag :div, msg, class: name %>
+        <% end %>
+      </div>
     </div>
   </header>
 
@@ -31,9 +36,6 @@
 
   <%= yield %>
 
-  <% flash.each do |name, msg| -%>
-    <%= content_tag :div, msg, class: name %>
-  <% end %>
 </div>
 </body>
 
