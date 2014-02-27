@@ -11,7 +11,7 @@ class UserTest < Capybara::Rails::TestCase
     visit lost_pets_path
     click_on "I found my pet!"
 
-    assert_content page, "Welcome"
+    assert_content page, "Enter information"
   end
 
 end

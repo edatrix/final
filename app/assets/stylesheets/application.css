@@ -30,12 +30,9 @@ body {
 .page-container {
   margin:3%;
   padding:3%;
-  /*background: image-url('Sandy.jpg') no-repeat center center;
-  min-height: 100%;
-  background-size:cover;*/
 }
 
- #account {
+#account {
   float: right;
- }
+}
 

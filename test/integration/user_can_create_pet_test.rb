@@ -4,7 +4,7 @@ class UserTest < Capybara::Rails::TestCase
 
   def test_user_can_visit_index
     visit root_path
-    assert_content page, "Welcome"
+    assert_content page, "Enter information"
   end
 
   def test_user_can_create_lost

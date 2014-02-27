@@ -5,7 +5,7 @@
     <link href='http://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
 
     <title>Find Bebe</title>
-    <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
     <%= csrf_meta_tags %>
   </head>
@@ -20,7 +20,7 @@
 <div class="page-container">
   <div id="account">
     <% if current_user %>
-      <span> Welcome, <%= current_user.name %></span>
+      <span> Welcome to Find Bebe!</span>
       <%= link_to "Sign Out", logout_path, id: "logout" %>
     <% else %>
       <%= button_to "Sign in with Twitter", twitter_login_path, method: :get, id: "twitter_login"%>
