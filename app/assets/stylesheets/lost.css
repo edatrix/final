@@ -15,7 +15,11 @@ ul.lost-pet-list {
   margin: 0 auto;
 }
 
-.found-pet-show-image {
+.lost-pet-show-image {
+  width: 300px;
+  height: 235px;
+  margin: 5px;
+  padding: 10px;
   display: block;
   margin:10px auto;
 }

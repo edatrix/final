@@ -29,10 +29,11 @@ body {
 
 .page-container {
   margin:3%;
-  padding:3%;
+  padding:1%;
 }
 
 #account {
   float: right;
+  margin: 10px;
 }
 

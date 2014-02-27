@@ -12,12 +12,12 @@
     <%= image_tag pet.avatar.url(:medium), {:class => "pet-show-image"} %>
   <% end %>
   </div>
-  
+
   <div class="form-container">
-    <div class="pet-form">
-      <h3 class="form-header"> Enter information about your lost or found pet here </h3>
-      <%= render partial: 'pet_form' %>
-    </div>
+    <h3 class="form-header"> Enter information about your lost or found pet here </h3>
+      <div class="pet-form">
+        <%= render partial: 'pet_form' %>
+      </div>
   </div>
 
 
