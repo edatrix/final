@@ -8,8 +8,10 @@
     <% elsif @pet.avatar_file_name %>
       <%= image_tag @pet.avatar_file_name, {:class => "show-pet-show-image"} %>
     <% end %>
+  </li>
+  <li class="show-text">
     <p class="show-description"> <%= @pet.description %></p>
     <p class="shelter-name"> If I belong to you, please contact <%= @pet.shelter_name %> </p>
-    <p> <%= @pet.zip %></p>
+    <!-- <p> <%= @pet.zip %></p> -->
   </li>
 </ul>

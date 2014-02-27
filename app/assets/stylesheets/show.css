@@ -4,6 +4,11 @@ ul.show-pet-list {
   overflow: hidden;
 }
 
+li.show-pet {
+  float: left;
+  margin: 25px;
+}
+
 .show-pet-show-image {
   display: block;
   margin:10px auto;
