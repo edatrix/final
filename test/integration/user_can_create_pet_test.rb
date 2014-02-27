@@ -18,7 +18,7 @@ class UserTest < Capybara::Rails::TestCase
 
     click_on "Submit info"
 
-    assert_content page, "Does this belong to you?"
+    assert_content page, "Do I belong to you?"
   end
 
     def test_user_can_create_found
@@ -32,7 +32,7 @@ class UserTest < Capybara::Rails::TestCase
 
     click_on "Submit info"
 
-    assert_content page, "Does this belong to you?"
+    assert_content page, "Do I belong to you?"
   end
 
 end
