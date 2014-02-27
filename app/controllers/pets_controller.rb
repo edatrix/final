@@ -15,19 +15,24 @@ class PetsController < ApplicationController
     end
   end
 
-  def fetch_found_pets
-    ["dog", "cat"].each do |type|
-      PetFetcher.found_pets(type, "80204")
-    end
+  # def fetch_found_pets
+  #   ["dog", "cat"].each do |type|
+  #     PetFetcher.found_pets(type, "80204")
+  #   end
 
-    redirect_to :found
-  end
+  #   redirect_to :found
+  # end
 
   def lost
     @pets = Pet.lost
   end
 
   def found
+    ["dog", "cat"].each do |type|
+      PetFetcher.found_pets(type, "80204")
+    end
+
+    redirect_to :found
     @pets = Pet.found
   end
 
