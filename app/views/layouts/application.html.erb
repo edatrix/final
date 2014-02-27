@@ -9,8 +9,8 @@
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
     <%= csrf_meta_tags %>
   </head>
-<body>
 
+<body>
   <header class="navbar-fixed-top">
     <div class="logo">
       <%= link_to image_tag("logo.png", size: "155x110"), "/" %>
@@ -32,11 +32,9 @@
     </div>
   </header>
 
-<div class="page-container">
-
-  <%= yield %>
-
-</div>
+  <div class="page-container">
+    <%= yield %>
+  </div>
 </body>
 
 <footer>
