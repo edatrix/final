@@ -13,3 +13,7 @@ ul.show-pet-list {
 p.shelter-name {
   font-size: 20px;
 }
+
+p.show-description {
+  font-size: 17px
+}

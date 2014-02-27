@@ -19,7 +19,11 @@ p.found-name {
   font-size: 20px;
 }
 
+p.found-description {
+  font-size: 17px;
+}
+
 .found-pet-show-image {
   display: block;
   margin:10px auto;
-  }
+}

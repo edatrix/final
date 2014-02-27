@@ -10,7 +10,7 @@
         <%= image_tag pet.avatar_file_name, {:class => "found-pet-show-image"} %>
       <% end %>
       <p class="found-name"> <%= pet.name %></p>
-      <p> <%= pet.description[0..250] %>...</p>
+      <p class="found-description"> <%= pet.description[0..250] %>...</p>
       <%= link_to "read more", pet_path(pet), class: "read-more" %>
       <p> <%= pet.shelter_name %></p>
       <p> <%= pet.zip %></p>

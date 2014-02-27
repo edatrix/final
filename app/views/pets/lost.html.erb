@@ -8,7 +8,7 @@
         <%= image_tag pet.avatar.url(:medium), {:class => "lost-pet-show-image"} %>
         <% end %>
         <p class="lost-name"> <%= pet.name %></p>
-        <p> <%= pet.description %></p>
+        <p class="lost-description"> <%= pet.description %></p>
         <p> <%= pet.zip %></p>
         <p> <%= button_to "I found my pet!", pet, method: :delete, data: { confirm: "Are you sure?" } %></p>
       </li>

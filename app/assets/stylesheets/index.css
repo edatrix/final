@@ -3,6 +3,7 @@
   margin-left: 100px;
   margin-right: 100px;
   padding: 10px;
+  padding-bottom: 25px;
 }
 
 .pet-show-image {
@@ -13,11 +14,10 @@
 }
 
 .buttons {
-  margin-top: 25px;
   margin-bottom: 25px;
-  padding-top: 25px;
   padding-bottom: 25px;
   text-align: center;
+  font-size: 20px;
 }
 
 .form-container {
@@ -31,6 +31,7 @@
 .pet-form {
   margin: 10px;
   padding: 5px;
+  font-size: 17px;
 }
 
 .form-header {

@@ -13,17 +13,15 @@
  */
 
 
- .navbar-fixed-top {
+.navbar-fixed-top {
   width: 100%;
   height: 110px;
   background-color: #EAE6F0;
- }
+}
 
- .logo {
-  /*padding-top: 7px;*/
-  /*padding-bottom: 5px;*/
+.logo {
   margin-left: 35px;
- }
+}
 
 footer {
   text-align: center;
@@ -31,6 +29,7 @@ footer {
   width: 100%;
   height: 50px;
   background-color: #EAE6F0;
+  font-size: 18px;
 }
 
 body {
@@ -47,9 +46,6 @@ body {
   float: right;
   margin: 10px;
   padding-right: 20px;
-}
-
-#flash {
-
+  font-size: 18px;
 }
 
