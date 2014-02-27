@@ -1,4 +1,4 @@
-<h2>Have you seen me?</h2>
+<h1>Have you seen me?</h1>
 
 <div id="lost">
   <ul class="lost-pet-list">
@@ -7,7 +7,7 @@
         <% if pet.avatar.exists? %>
         <%= image_tag pet.avatar.url(:medium), {:class => "lost-pet-show-image"} %>
         <% end %>
-        <p> <%= pet.name %></p>
+        <p class="lost-name"> <%= pet.name %></p>
         <p> <%= pet.description %></p>
         <p> <%= pet.zip %></p>
         <p> <%= button_to "I found my pet!", pet, method: :delete, data: { confirm: "Are you sure?" } %></p>
