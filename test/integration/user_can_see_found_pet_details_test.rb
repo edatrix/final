@@ -11,7 +11,6 @@ class UserTest < Capybara::Rails::TestCase
 
     assert_content page, p.name
     assert_content page, p.description
-    assert_content page, p.zip
   end
 
 end
