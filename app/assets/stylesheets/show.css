@@ -7,6 +7,7 @@ ul.show-pet-list {
 li.show-pet {
   float: left;
   margin: 25px;
+  margin-top: 0px;
 }
 
 .show-pet-show-image {
