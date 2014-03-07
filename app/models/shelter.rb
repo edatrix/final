@@ -1,5 +1,8 @@
 class Shelter
 
+  geocoded_by :address
+  after_validation :geocode, :if => :address_changed?
+
   attr_reader :id, :name, :address1, :address2, :city, :state, :zip, :country,
       :latitude, :longitude, :phone, :fax, :email
 

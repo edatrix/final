@@ -1,5 +1,6 @@
 Final::Application.routes.draw do
 
+  resources :locations
   resources :pets do
     get :found, on: :collection
     get :lost, on: :collection
