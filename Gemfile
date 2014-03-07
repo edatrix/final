@@ -16,6 +16,7 @@ gem 'omniauth-facebook'
 gem 'petfinder'
 gem 'json'
 gem 'figaro'
+gem 'geocoder'
 
 group :doc do
   gem 'sdoc', require: false
