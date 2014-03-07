@@ -17,6 +17,7 @@ gem 'petfinder'
 gem 'json'
 gem 'figaro'
 gem 'geocoder'
+gem 'nifty-generators'
 gem 'mocha'
 
 group :doc do
@@ -29,7 +30,6 @@ group :development do
   gem 'binding_of_caller'
   gem 'sqlite3'
   gem 'pg'
-  gem 'nifty-generators'
 end
 
 group :test do

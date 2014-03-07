@@ -1,7 +1,12 @@
 class LocationsController < ApplicationController
 
   def index
-    @locations = Location.all
+    # @locations = Location.all
+    if params[:search].present?
+      @locations = Location.near(params[:search], 50, :order => :distance)
+    else
+      @locations = Location.all
+    end
   end
 
   def show
@@ -35,7 +40,7 @@ class LocationsController < ApplicationController
   end
 
   def destroy
-    @location = Location.find(id: params[:id])
+    @location = Location.find(params[:id])
     @location.destroy
     redirect_to locations_url, :notice => "Successfully destroyed location."
   end

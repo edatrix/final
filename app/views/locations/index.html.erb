@@ -1,4 +1,10 @@
-<% title "Locations" %>
+<% "Locations" %>
+
+<%= form_tag locations_path, :method => :get do %>
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search Near", :name => nil %>
+<% end %>
 
 <table>
   <tr>
@@ -6,7 +12,7 @@
     <th>Latitude</th>
     <th>Longitude</th>
   </tr>
-  <% for location in @locations %>
+  <% @locations.each do |location| %>
     <tr>
       <td><%= location.address %></td>
       <td><%= location.latitude %></td>
