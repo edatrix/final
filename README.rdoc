@@ -1,3 +1,0 @@
-== Find Bebe
-
-Find Bebe is a petfinder app built by lauren spath luhring using Minitest, Rails, and the Petfinder API.
